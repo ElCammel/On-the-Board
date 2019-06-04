@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Kefa.ttf">
-            <string>Kefa-Regular</string>
+        <array key="Didot.ttc">
+            <string>Didot</string>
         </array>
     </customFonts>
     <scenes>
@@ -23,21 +23,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="on_the_board-1" translatesAutoresizingMaskIntoConstraints="NO" id="f5s-Le-kOP">
-                                <rect key="frame" x="-39" y="92" width="453" height="483"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="on_the_board-1" translatesAutoresizingMaskIntoConstraints="NO" id="f5s-Le-kOP">
+                                <rect key="frame" x="69.5" y="215.5" width="236" height="236"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On The Board" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-ht-IFW">
-                                <rect key="frame" x="101" y="139" width="172" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On The Board" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-ht-IFW">
+                                <rect key="frame" x="41.5" y="481.5" width="292.5" height="137.5"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="30"/>
                                 <color key="textColor" red="0.99957722425460815" green="0.14758241176605225" blue="0.00097579078283160925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <size key="shadowOffset" width="100" height="100"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f5s-Le-kOP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="GhQ-kr-1NT"/>
+                            <constraint firstItem="f5s-Le-kOP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="gCI-Rz-RTI"/>
+                            <constraint firstItem="w6g-ht-IFW" firstAttribute="top" secondItem="f5s-Le-kOP" secondAttribute="bottom" constant="30" id="nLb-Kn-dDc"/>
+                            <constraint firstItem="w6g-ht-IFW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="oCm-3J-AhE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
